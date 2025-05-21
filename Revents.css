@@ -1,0 +1,148 @@
+
+body{
+  background: #eca762;
+}
+.nav-bar {
+    background-color: #d76909;
+    color: #060303;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-bar li {
+    margin-right: 20px;
+  }
+  
+  .nav-bar a {
+    color: #f4eeee;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-bar a:hover {
+    color: #110f0c;
+  }
+
+  .image-text {
+    position: relative;
+  }
+  
+  .image-text img {
+    width: 1500px;
+    height: 600px;
+  }
+  
+  .image-text .text {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f0c692;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+
+  .image-text-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .image-text-hover:hover {
+    /* hover effects */
+    color: #fff;
+    background-color: #333;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .gall {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .gall img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .gall h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+    align-items: center;
+    color: rgb(218, 146, 31);
+  }
+
+  .contact-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 50px;
+    background-color: #fba12b;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 490px;
+    padding: 10px;
+    border: 2px solid #070605;
+    border-radius: 7px;
+  }
+  
+  button[type="submit"] {
+    background-color: #efa256;
+    color: #0f010f;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 18px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e2af40;
+}
+
+  /* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .contact-form {
+    margin: 20px auto;
+    padding: 10px;
+    }
+}
+#contact{
+    background-image: url("cpg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh;
+}
